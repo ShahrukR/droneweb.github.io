@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-set {
+            width: 100%;
+            height: 95vh;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .hover1:hover{
+            transform: translateY(-20px);
+        }
+        /* .hover1{
+            background-color: gray;
+        } */
+        #btntwo{
+            margin-left: 35%;
+        }
+
+        .loc{
+            margin-left: 30%;
+            margin-top: 100px;
+        }
+        .btnonee{
+            padding: 10px;
+            font-size: 25px;
+            margin-top: 15px;
+            margin-left:30%;
+            border-radius: 50px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Drone</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html" style="color: #fff;">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff;">
+                            Register
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="login.html">Log in </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Booking.html">Book a Flight</a>
+                            <hr>
+                            <!-- <a class="dropdown-item" href="logout.html">Logout</a> -->
+                            <a class="dropdown-item" href="payment.html" style="background-color:btn-primary">payment</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                            style="color: #fff;">Service</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="img-set carousel-item active">
+                    <img src="images/bg-1.jpg" alt="Los Angeles" width="1100" height="500">
+                    <div class="carousel-caption" style="margin-bottom: 180px; margin-right: 20%; ">
+                        <h3 style="font-size: 30px; font-weight: bold; text-shadow: 2px 1px black;">Book a City Drone to
+                            your destination in town</h3>
+                        <p style="font-size: 25px; text-shadow: 2px 1px black;">Choose from a range of categories and
+                            prices</p>
+                    </div>
+                </div>
+                <div class="img-set carousel-item">
+                    <img src="images/img-6.jpg" alt="Chicago" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>Book a City Drone to your destination in town</h3>
+                        <p>Choose from a range of categories and prices</p>
+                    </div>
+                </div>
+                <div class="img-set carousel-item">
+                    <img src="images/img-3.jpg" alt="New York" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>Drone</h3>
+                        <p>Thank you!</p>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- About us -->
+
+    <section>
+        <div class="container-fluid">
+            <h1 class="text-center text-capitalize pt-5">About Us</h1>
+            <hr class="w-25 mx-auto pb-5">
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img src="images/img-5.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h1>Who am I ?</h1>
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                    <button class="btn bg-primary text-white">Wanna Know Me </button>
+
+                </div>
+            </div>
+            </hr>
+        </div>
+    </section>
+    <!-- About us End -->
+    <!-- service part -->
+
+    <section>
+        <div class="container">
+            <h1 class="text-center text-capitalize pt-5">Services</h1>
+            <hr class="w-25 mx-auto pb-5">
+
+
+            <div class="row text-center mb-5">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ser-1.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Drone Select </h4>
+
+                            <p class="card-text" style="font-size: 15px;"> A membership program with Drone that lets you
+                                ride a Prime Sedan at Mini fares, book cabs without peak pricing and has zero wait time
+
+                            </p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ser-2.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Secure and Safer Rides </h4>
+                            <p class="card-text" style="font-size: 15px;">Verified drivers, an emergency alert button,
+                                and live ride tracking are some of the features that we have in place to ensure you a
+                                safe travel experience.
+                            </p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="images/ser-3.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Share and Express </h4>
+                            <p class="card-text" style="font-size: 15px;"> To travel with the lowest fares choose Drone
+                                Share. For a faster travel experience we have Share Express on some fixed routes with
+                                zero deviations. Choose your ride and zoom away!
+                            </p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Servicse psrt ends -->
+
+
+    <!-- Service provider Starts-->
+
+    <!-- service part Starts-->
+
+    <section>
+        <div class="container">
+            <h1 class="text-center text-capitalize pt-5">Select Services Provider</h1>
+            <hr class="w-25 mx-auto pb-5">
+
+
+            <div class="row text-center mb-5">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="images/shadan.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h1>Shahrukh</h1>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="images/shahrukh.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h1>Shadan</h1>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top" src="images/shadman.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h1>Shadman</h1>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Servicse part ends -->
+    <!-- Services Provider Ends -->
+
+
+
+    <!-- contact part start -->
+    <section class="text-center">
+        <article class="py-5 bg-primary text-white">
+            <div>
+                <h3 class="display-4">+91 9876543210</h3>
+                <p>If you want Best Services Call us now</p>
+            </div>
+            <button class="btn btn-warning">Contact now</button>
+        </article>
+    </section><br> <br>
+    <!-- contact part ends -->
+
+
+    <!-- Seitified Pilot -->
+
+    <section class="pilot">
+        <div class="container heading text-center">
+            <h1 class="text-center font-weight-bold">Select Certified Pilot</h1>
+            <p class="text-capitalies pt-1">Our Satisfied Customer Says</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="hover1 col-lg-4 col-md-4 col-12 ">
+                <img src="images/p-1.jpg" alt="img-1" class="img-fluid" style="border-radius: 100%;">
+
+                <p class="m-4" style="font-size: 15px;">
+                    The perfect way to get through your everyday travel needs.
+                    City Drones are available 24/7 and you can book and travel in an instant.
+                    With rides starting from as low as Rs. 6/km,
+                    you can choose from a wide range of options!
+                    You can also opt to do your bit for the environment with Drone Share!</p>
+
+                <h1 class="text-center">Shahrukh</h1>
+                <!-- <p class="text-center" style="font-weight: bold;">pilot</p> -->
+                <a href="#" class="btn btn-primary" id="btntwo">See Profile</a>
+            </div>
+
+            <div class="hover1 col-lg-4 col-md-4 col-12 ">
+                <img src="images/p-2.jpg" alt="img-1" class="img-fluid" style="border-radius: 100%;">
+
+                <p class="m-4" style="font-size: 15px;">
+                    Ride out of town at affordable one-way and round-trip fares with Drones
+                    intercity travel service. Choose from a range of AC Drone driven by top partners,
+                    available in 1 hour or book upto 7 days in advance.
+                    We have you covered across India with presence in 90+ cities with over 500 one way routes.
+                </p>
+
+                <h1 class="text-center">Amaan</h1>
+                <!-- <p class="text-center" style="font-weight: bold;">pilot</p> -->
+                <a href="#" class="btn btn-primary" id="btntwo">See Profile</a>
+            </div>
+
+            <div class="hover1 col-lg-4 col-md-4 col-12">
+                <img src="images/p-3.jpg" alt="img-1" class="img-fluid" style="border-radius: 100%;">
+
+                <p class="m-4" style="font-size: 16px;">
+                    With Drone Rentals you get a Drone at your disposal.
+                    So be it a day long business meeting,
+                    a shopping trip with your friends or just a day out in a new city, we have you covered.
+                    Packages start at 1 hour and can be extended upto 12 hours!</p>
+
+                <h1 class="text-center">Suhail</h1>
+                <!-- <p class="text-center" style="font-weight: bold;">pilot</p> -->
+                <a href="#" class="btn btn-primary" id="btntwo">See Profile</a> 
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- galary start -->
+
+    <div class="container">
+        <h1 class="text-center text-capitalize pt-5">Drone</h1>
+        <hr class="w-25 mx-auto pb-5">
+
+
+        <div class="row">
+            <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src="images/img-1.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src="images/img-2.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src="images/img-3.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src="images/img-4.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src="images/img-5.jpg" class="img-fluid">
+            </div>
+
+
+            <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src="images/la-img1.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    </section>
+
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-4 col-md-4 col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14579285.661593324!2d74.09893103905786!3d26.85915964656671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdrone!5e0!3m2!1sen!2sin!4v1632916013935!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 </div>
+                 <div class="loc col-lg-4 col-md-4 col-12"> 
+                     <h1>Find The Location</h1>           
+                    <label for="location" class="form-label">Current Location</label>
+                    <input type="text" class="form-control" id="text">
+                    <label for="inputPassword4" class="form-label">Now</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                    <button class="btnonee bg-primary">Search Drone</button>
+                </div>
+             </div>
+         </div>
+
+    <!-- Galary end -->
+    <!-- register form in short -->
+    <section class="bg-primary">
+
+        <article class="py-5">
+            <div class="text-center text-white">
+                <h3 class="display-4">Want To Join</h3>
+                <p>Be a part of Drone family</p>
+
+                <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Booking Now</button>
+            </div><br><br>
+            
+<!-- ***********************************************payment Option ********************************* -->
+
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">SignUp</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <br>
+    <!-- register ends -->
+    <!-- contact us start -->
+    <!-- <section>
+        <div class="container mb-5">
+            <h1 class="text-center text-capitalize pt-5">Contact us</h1>
+            <hr class="w-25 mx-auto pb-5">
+
+            <div class="w-50  mx-auto">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="email">Your Name:</label>
+                        <input type="text" class="form-control" id="email" autocomplete="off"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Email:</label>
+                        <input type="Email" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Mobile no:</label>
+                        <input type="Number" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label>textarea</label>
+                        <textarea class="form-control"></textarea>
+
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+  
+                </form>
+
+            </div>
+    </section>
+     -->
+    <!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+    <div style="background-color: #21d192;">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fa fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3 dark-grey-text">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Your Account</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Help</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+      <a class="dark-grey-text" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

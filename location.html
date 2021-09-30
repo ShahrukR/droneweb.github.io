@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation API</title>
+</head>
+<body>
+    
+    <h1>Hello,lets trace your location</h1>
+    <button onclick="getlocation()">Get Location</button>
+    <!-- output will go here -->
+    <div id="output"></div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        var x = document.getElementById('output');
+      function getlocation()
+      {
+          if(navigator.geolocation)
+          {
+            //   x.innerHTML = "Supporting";
+            navigator.geolocation.getCurrentPosition(showPosition);
+          }
+          else{
+            x.innerHTML = "Browser not Supporting";
+
+          }
+      }
+
+     function showPosition(Position){
+         x.innerHTML = "latitude = " + Position.coords.latitude;
+         x.innerHTML += "<br />"
+         x.innerHTML +=  "longitude = " + Position.coords.longitude;
+
+      }
+    </script>
+</body>
+</html>
